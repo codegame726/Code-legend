@@ -21,23 +21,24 @@ const toggleFunction = (i) => {
     <h5>Code</h5>
     <h7>Cademy</h7>
     </div>
-    <div className="slowly"></div>
     <div className="seed">
   <li onClick={()=> toggleFunction(1)}>Catalog <div className="shizuka">{toggleCount === 1 ? `▲` : `▼`}</div></li>
   <li onClick={()=> toggleFunction(2)} >Resources <div className="shizuka">{toggleCount === 2 ? `▲` : `▼`}</div> </li>
-  <li onClick={()=> toggleFunction(3)} >Community <div className="shizuka">{toggleCount === 3 ? `▲` : `▼`}</div></li>
+  <li  onClick={()=> toggleFunction(3)} >Community <div className="shizuka">{toggleCount === 3 ? `▲` : `▼`}</div></li>
   <li onClick={()=> toggleFunction(4)} >Pricing  <div className="shizuka">{toggleCount === 4 ? `▲` : `▼`}</div></li>
-  <li onClick={()=> toggleFunction(5)} >Career Center <div className="shizuka">{toggleCount === 5 ? `▲` : `▼`}</div></li>
-  <li onClick={()=> toggleFunction(6)} >For Teams <div className="shizuka">{toggleCount === 6 ? `▲` : `▼`}</div></li>
-    </div>
+   <li onClick={()=> toggleFunction(5)} >Career Center <div className="shizuka">{toggleCount === 5 ? `` : ``}</div></li>
+  <li onClick={()=> toggleFunction(6)} >For Teams <div className="shizuka">{toggleCount === 6 ? `` : ``}</div></li>
+    </div> 
+   <div className="active">
     <div className="lastpart">
     <CiSearch /> 
     </div>
   <div className="don"> <h3>Log In</h3> </div>
    <div className="signup"><button>Sign Up</button></div>
-   <div className="active"></div>
+
    </div>
-  <div className={toggleCount === 1 ? `menu-open` : `menu-close`}>
+   </div>
+  <div className={toggleCount === 1 ? `Catalog-open` : `Catalog-close`}>
   <div className="container">
     <div className="first">
       <karan>Popular Course Topics</karan>
@@ -95,14 +96,10 @@ const toggleFunction = (i) => {
     <graph>Not Sure Where To Begin ?</graph>
     <a href="#">Take Our Quiz</a>
     </div>   
-
-    
-  </div>
+    </div>
+    </div>
   
-   
-  </div>
-  
-  <div className={toggleCount === 2 ? `menu-open` : `menu-close`}>
+  <div className={toggleCount === 2 ? `Resources-open` : `Resoures-close`}>
   <div className="main">
   <div className="current">
   <h4>Docs</h4>
@@ -128,8 +125,71 @@ const toggleFunction = (i) => {
      <li>PHP</li>
       </ol>
   </div> 
+  <div className="resources-4">
+    <ol><li>
+     Python</li>
+     <li>React</li>
+     <li>SQL</li>
+     <li>UI/UX</li>
+      </ol>
+  </div> 
+  <div className="learning">
+    <li>Learning & Practice Tools</li>
+  </div>
+  <div className="learning-2">
+   
+   <h9>Articles</h9>
+   <learn>Learn about technical concepts.</learn>
+   <projects>
+  Projects
+   </projects>
+   <practice> Practice and build your portfolio</practice>
+  </div> 
+  <div className="learning-3">
+   
+   <h9>Cheatsheets</h9>
+   <learn>Review concepts from your courses</learn>
+   <videos>
+  Videos
+   </videos>
+   <watch> Watch tutorials , projects and more.</watch>
+  </div> 
+  <div className="learning-4">
+   
+   <h9>Code Challenges</h9>
+   <test>Test your knowledge and Prep for Intervies</test>
+   <workspace>
+  Workspace
+  </workspace>
+   <build>Build and Share projects in your browser.</build>
+  </div> 
   </div>
    
+   </div>
+   <div className={toggleCount === 3 ? `Community-open` : `Community-close`}>
+   
+    <div className="community1">
+      <ol><li>
+       Forums
+        </li>
+        <li>
+          Discord
+                  </li>
+       <li>Chapters</li>
+       <li>Events</li>
+       <li>Learn Stories</li>
+       <li>Code Crew</li>
+        </ol>
+    </div>
+   </div>
+   <div className={toggleCount === 4 ? `Pricing-open` : `Pricing-close`}>
+     <div className="Pricing">
+      <ol><li>
+       For Individuals </li>
+       <li>For Students</li>
+       <li>For Teams</li>
+        </ol>
+     </div>
      </div>
      </div>
      
